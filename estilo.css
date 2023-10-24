@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+/*Gerais*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Cabeçalho*/
+ul {
+    background-color: rgb(255, 255, 255);
+}
+
+ul a {
+    color: #000000;
+}
+
+ul a:hover {
+    color: #c2bebe;
+}
+/*Fim cabeçalho*/
+
+/*Rodapé*/
+#footer {
+    height: 250px;
+}
+
+#footer2 {
+    border-top: 2px solid white;
+    height: 80px;
+}
+
+#footer, #footer2 {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+#footer2 h5 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+}
+
+.ul-rodape {
+    margin-top: 1%;
+    margin-right: 5%;
+    float: right;
+    list-style-type: none;
+    width: 200px;
+    height: 40px;
+    background-color: #000000
+}
+
+.li-rodape a {
+    display: block;
+    color: #ffffff;
+    padding: 6px 13px;
+    text-decoration: none;
+}
+
+.ultimo-a {
+    border-bottom: 2px solid white;
+}
+
+.li-rodape a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.foto-rodape {
+    float: left;
+    height: 230px;
+    width: 450px;
+    margin-top: 1%;
+    margin-left: 35%;
+}
+
+.foto-rodape img {
+    height: 100%;
+    width: 100%;
+}
+
+.seta img {
+    float: right;
+    width: 85px;
+    margin-top: -4%;
+}
+/*Fim rodapé*/
+/*Fim gerais*/
+
+/*Index*/
+.card-deck {
+    margin-top: 5%;
+    max-width: 100%;
+}
+/*Fim index*/
+
+/*Sobre*/
+.h1sobre {
+    font-family: 'Bangers';
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.section {
+    width: 100%;
+    height: 100vh; /* Isso define a altura da seção para preencher a tela inteira do usuário */
+    display: flex;
+    color: white;
+}
+
+#section1 {
+    background-image: url(imagens/fundo1.png);
+    background-size: cover;
+    padding-left: 10%;
+}
+
+#section2 {
+    padding-left: 5%;
+    color: black;
+}
+
+#section3 {
+    background-image: url(imagens/fundo3.png);
+    background-size: cover;
+    padding-left: 10%;
+}
+
+.box {
+    width: 50%;
+    height: 100%; /* Use 100% da altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    padding: 50px;
+    font-family: 'Calibri';
+}
+
+.fotos {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fotos img {
+    width: 600px;
+    height: 80vh;
+}
+
+.efeito {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.efeito:hover {
+    transform: scale(1.25);
+}
+/*Fim sobre*/
+
+/*Contato*/
+.h1contato {
+    font-family: 'Calibri';
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+}
+
+.contato-page {
+    background-color: #000000;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* Define a cor de fundo como azul apenas para a página "contato.html" */
+}
+
+.fundo-contato {
+    background-color: #ffffff;
+    width: 1100px;
+    height: 600px;
+}
+
+input {
+    height: 50px;
+    padding: 15px;
+    border: none;
+    padding-top: 20px;
+    border-bottom: 2px solid #000000;
+}
+
+textarea {
+    font-family: 'Calibri';
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 2px solid #000000;
+}
+
+form [type="submit"] {
+    margin-right: 3%;
+}
+
+form [type="submit"],
+form [type="reset"] {
+    height: 40px;
+    width: 110px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 18px;
+    
+}
+
+form [type="submit"],
+form [type="reset"]:hover {
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    padding-top: 20px;
+}
+
+.fotocontato {
+    float: left;
+    height: 600px;
+    margin-right: 30px;
+}
+
+.fotocontato img {
+    height: 100%;
+}
+
+.button-container {
+    margin-top: 1%;
+}
+/*FIM CONTATO*/
+
+
+/*Responsividade*/
+/*CELULAR*/
+@media (max-width: 820px) {
+    /*Gerais*/
+    /*Rodapé*/
+    #footer {
+        height: 170px;
+    }
+
+    #footer2 h5 {
+        font-size: 15px;
+        padding-right: 11%;
+    }
+
+    .seta img {
+        width: 15%;
+        padding-right: 1%;
+        margin-top: -13%;
+    }
+
+    .foto-rodape {
+        display: none;
+    }
+    /*Fim rodapé*/
+
+    /*Sobre*/
+    #section1, #section2 {
+        padding-left: 0%;
+    }
+
+    #section3 {
+        padding-left: 0%;
+    }
+    .box {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .fotos {
+        display: none;
+    }
+    /*Fim sobre*/
+
+    /*Contato*/
+    .h1contato {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .fundo-contato {
+        width: 85%;
+        height: 90vh;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .fotocontato {
+        display: none;
+    }
+
+}
+
+
